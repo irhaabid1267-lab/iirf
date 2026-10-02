@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Registeration <Form></Form>
+    </title>
+</head>
+
+<body>
+    <h1>Intern Registeration form</h1>
+    <p>Fill this form fields</p>
+    <!-- Form Fields -->
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <br>
+        <input type="tel" id="phone" name="phone" placeholder="03001234567" pattern="[0-9]{11}"
+            title="Enter an 11-digit phone number" required>
+        <br>
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <br>
+        <input type="date" id="dob" name="dob" placeholder="Enter your date of birth" required>
+        <br>
+        <!-- Gender -->
+        <label>Gender:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+        <!-- Course -->
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select your course</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+        <br><br>
+        <!-- Skills -->
+        <label>Skills:</label>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="sql" name="skills" value="SQL">
+        <label for="sql">SQL</label>
+        <br><br>
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <br>
+        <textarea id="address" name="address" placeholder="Enter your address" rows="4" cols="40" required></textarea>
+        <br><br>
+        <!-- Message -->
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="5" cols="40"></textarea>
+        <br><br>
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+
+</html>
